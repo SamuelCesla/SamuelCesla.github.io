@@ -1,0 +1,16 @@
+body {
+    background-color: blue;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    max-width: 600px;
+    border-radius: 50px;
+    box-shadow: rgb(255, 0, 0) 50px 0px 100px, rgba(255, 0, 0) 0px -50px 100px, rgba(255, 0, 0) 0px 50px 100px, rgba(255, 0, 0) 0px 12px 250px, rgba(255, 0, 0) 0px -50px 100px; 
+    margin: 100px auto;
+    padding: 5px 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.obrazek{
+    border-radius: 500px;
+}
