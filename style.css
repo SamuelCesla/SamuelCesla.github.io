@@ -1,16 +1,48 @@
 body {
-    background-color: blue;
+    background-color: green;
 }
 
 .container {
     background-color: rgb(255, 255, 255);
-    max-width: 600px;
-    border-radius: 50px;
-    box-shadow: rgb(255, 0, 0) 50px 0px 100px, rgba(255, 0, 0) 0px -50px 100px, rgba(255, 0, 0) 0px 50px 100px, rgba(255, 0, 0) 0px 12px 250px, rgba(255, 0, 0) 0px -50px 100px; 
-    margin: 100px auto;
-    padding: 5px 30px;
+    border-radius: 4rem;
+    box-shadow: rgba(104, 64, 1, 0.692) 0px 54px 55px, rgba(104, 64, 1, 0.692) 0px -12px 30px, rgba(104, 64, 1, 0.692) 0px 4px 6px, rgba(104, 64, 1, 0.692) 0px 12px 13px, rgba(104, 64, 1, 0.692) 0px -3px 5px;
+    margin: 1rem;
+    padding: 1rem 2rem;
     font-family: 'Courier New', Courier, monospace;
 }
-.obrazek{
-    border-radius: 500px;
+
+.obrazek {
+    border-image-width: 20rem;
+}
+
+#navbar {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar ul li a {
+    padding: 1rem;
+    margin: 0 4px;
+}
+
+#navbar ul li a:hover {
+    background-color: #93cb52;
+    border-radius: 5px;
 }
