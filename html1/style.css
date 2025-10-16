@@ -9,11 +9,12 @@ body {
     margin: 1rem;
     padding: 1rem 2rem;
     font-family: 'Courier New', Courier, monospace;
+    border-image-width: 15rem;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
 }
 
-.obrazek {
-    border-image-width: 15rem;
-}
+
 
 #navbar {
     background-color: #000000;
@@ -21,8 +22,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
-    font-size: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -39,10 +40,10 @@ body {
 
 #navbar ul li a {
     padding: 1rem;
-    margin: 0 4px;
+    margin:  1rem;
 }
 
 #navbar ul li a:hover {
     background-color: #93cb52;
-    border-radius: 5px;
+    border-radius: 0.3rem;
 }
