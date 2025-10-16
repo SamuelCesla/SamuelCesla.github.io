@@ -1,0 +1,36 @@
+body{
+    background-color:darkslategray;
+}
+
+#navbar {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    justify-content: flex-end; /* na pomoc jsem použil stránku https://personal-portfolio.freecodecamp.rocks/ */
+}
+
+#navbar a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar ul li a {
+    padding: 1rem;
+    margin:  1rem;
+}
+
+#navbar ul li a:hover {
+    background-color: #93cb52;
+    border-radius: 0.3rem;
+}
