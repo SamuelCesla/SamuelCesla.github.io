@@ -1,36 +1,150 @@
-body{
-    background-color:darkslategray;
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
 
 #navbar {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    justify-content: flex-end; /* na pomoc jsem použil stránku https://personal-portfolio.freecodecamp.rocks/ */
-}
-
-#navbar a {
-    color: rgb(255, 0, 0);
-    text-decoration: none;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #navbar ul {
-    display: flex;
     list-style: none;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-#navbar ul li a {
-    padding: 1rem;
-    margin:  1rem;
+#navbar li {
+    margin: 0 20px;
 }
 
-#navbar ul li a:hover {
-    background-color: #93cb52;
-    border-radius: 0.3rem;
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+#navbar a:hover {
+    color: #ff9800;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project h3 {
+    padding: 15px;
+    color: #333;
+}
+
+.project p {
+    padding: 0 15px 15px;
+    color: #555;
+}
+
+
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    color: white;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #navbar li {
+        margin: 10px 0;
+    }
 }
